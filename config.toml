@@ -1,0 +1,74 @@
+# theme = "gruvbox"
+# theme = "onedark"
+# theme = "chalkboard"
+# theme = "fleet_dark"
+# theme = "catppuccin_latte"
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+rulers = [80]
+bufferline = "multiple"
+auto-completion = false
+# Minimum severity to show a diagnostic after the end of a line:
+end-of-line-diagnostics = "hint"
+gutters = ["diagnostics", "spacer", "diff"]
+
+
+[editor.inline-diagnostics]
+# Minimum severity to show a diagnostic on the primary cursor's line.
+# Note that `cursor-line` diagnostics are hidden in insert mode.
+cursor-line = "error"
+# Minimum severity to show a diagnostic on other lines:
+# other-lines = "error"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[keys.normal]
+A-l = ":buffer-next"
+A-h = ":buffer-previous"
+A-w = ":buffer-close"
+W = "move_next_sub_word_start"
+B = "move_prev_sub_word_start"
+E = "move_next_sub_word_end"
+
+[keys.insert]
+A-x = "normal_mode"
+
+[keys.select]
+A-x = "normal_mode"
+W = "move_next_sub_word_start"
+B = "move_prev_sub_word_start"
+E = "move_next_sub_word_end"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+# display-inlay-hints	= true
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+
+[editor.soft-wrap]
+enable = true
+
+# [keys.normal.space]
+# e = [
+#   # ":sh rm -f /tmp/unique-file-h21a434",
+#   ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/unique-file-h21a434",
+#   # ":insert-output echo \"x1b[?1049h\" > /dev/tty",
+#   # ":open %sh{cat /tmp/unique-file-h21a434}",
+#   ":redraw",
+# ]
