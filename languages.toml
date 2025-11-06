@@ -4,8 +4,16 @@
 [language-server]
 als = { command = "als" }
 ada-language-server = { command = "ada_language_server" }
-ada-gpr-language-server = {command = "ada_language_server", args = ["--language-gpr"]}
-angular = {command = "ngserver", args = ["--stdio", "--tsProbeLocations", ".", "--ngProbeLocations", ".",]}
+ada-gpr-language-server = { command = "ada_language_server", args = [
+  "--language-gpr",
+] }
+angular = { command = "ngserver", args = [
+  "--stdio",
+  "--tsProbeLocations",
+  ".",
+  "--ngProbeLocations",
+  ".",
+] }
 awk-language-server = { command = "awk-language-server" }
 bash-language-server = { command = "bash-language-server", args = ["start"] }
 bass = { command = "bass", args = ["--lsp"] }
@@ -14,18 +22,26 @@ bicep-langserver = { command = "bicep-langserver" }
 bitbake-language-server = { command = "bitbake-language-server" }
 bufls = { command = "bufls", args = ["serve"] }
 cairo-language-server = { command = "cairo-language-server", args = [] }
-cl-lsp = { command = "cl-lsp", args = [ "stdio" ] }
+cl-lsp = { command = "cl-lsp", args = ["stdio"] }
 clangd = { command = "clangd" }
 clojure-lsp = { command = "clojure-lsp" }
 cmake-language-server = { command = "cmake-language-server" }
 crystalline = { command = "crystalline", args = ["--stdio"] }
-cs = { command = "cs", args = ["launch", "--contrib", "smithy-language-server", "--", "0"] }
+cs = { command = "cs", args = [
+  "launch",
+  "--contrib",
+  "smithy-language-server",
+  "--",
+  "0",
+] }
 csharp-ls = { command = "csharp-ls" }
 cuelsp = { command = "cuelsp" }
 dart = { command = "dart", args = ["language-server", "--client-id=helix"] }
 dhall-lsp-server = { command = "dhall-lsp-server" }
 docker-langserver = { command = "docker-langserver", args = ["--stdio"] }
-docker-compose-langserver = { command = "docker-compose-langserver", args = ["--stdio"]}
+docker-compose-langserver = { command = "docker-compose-langserver", args = [
+  "--stdio",
+] }
 dot-language-server = { command = "dot-language-server", args = ["--stdio"] }
 earthlyls = { command = "earthlyls" }
 elixir-ls = { command = "elixir-ls", config = { elixirLS.dialyzerEnabled = false } }
@@ -37,38 +53,57 @@ forth-lsp = { command = "forth-lsp" }
 fortls = { command = "fortls", args = ["--lowercase_intrinsics"] }
 fsharp-ls = { command = "fsautocomplete", config = { AutomaticWorkspaceInit = true } }
 gleam = { command = "gleam", args = ["lsp"] }
-graphql-language-service = { command = "graphql-lsp", args = ["server", "-m", "stream"] }
-haskell-language-server = { command = "haskell-language-server-wrapper", args = ["--lsp"] }
+graphql-language-service = { command = "graphql-lsp", args = [
+  "server",
+  "-m",
+  "stream",
+] }
+haskell-language-server = { command = "haskell-language-server-wrapper", args = [
+  "--lsp",
+] }
 idris2-lsp = { command = "idris2-lsp" }
 intelephense = { command = "intelephense", args = ["--stdio"] }
 jdtls = { command = "jdtls" }
-jsonnet-language-server = { command = "jsonnet-language-server", args= ["-t", "--lint"] }
-julia = { command = "julia", timeout = 60, args = [ "--startup-file=no", "--history-file=no", "--quiet", "-e", "using LanguageServer; runserver()", ] }
+jsonnet-language-server = { command = "jsonnet-language-server", args = [
+  "-t",
+  "--lint",
+] }
+julia = { command = "julia", timeout = 60, args = [
+  "--startup-file=no",
+  "--history-file=no",
+  "--quiet",
+  "-e",
+  "using LanguageServer; runserver()",
+] }
 koka = { command = "koka", args = ["--language-server", "--lsstdio"] }
 kotlin-language-server = { command = "kotlin-language-server" }
-lean = { command = "lean", args = [ "--server" ] }
+lean = { command = "lean", args = ["--server"] }
 ltex-ls = { command = "ltex-ls" }
 markdoc-ls = { command = "markdoc-ls", args = ["--stdio"] }
 markdown-oxide = { command = "markdown-oxide" }
 marksman = { command = "marksman", args = ["server"] }
-metals = { command = "metals", config = { "isHttpEnabled" = true, metals = { inlayHints = { typeParameters = {enable = true} , hintsInPatternMatch = {enable = true} }  } } }
+metals = { command = "metals", config = { "isHttpEnabled" = true, metals = { inlayHints = { typeParameters = { enable = true }, hintsInPatternMatch = { enable = true } } } } }
 mint = { command = "mint", args = ["ls"] }
 mojo-lsp = { command = "mojo-lsp-server" }
 nil = { command = "nil" }
 nimlangserver = { command = "nimlangserver" }
 nimlsp = { command = "nimlsp" }
 nls = { command = "nls" }
-nu-lsp = { command = "nu", args = [ "--lsp" ] }
+nu-lsp = { command = "nu", args = ["--lsp"] }
 ocamllsp = { command = "ocamllsp" }
 ols = { command = "ols", args = [] }
-omnisharp = { command = "OmniSharp", args = [ "--languageserver" ] }
+omnisharp = { command = "OmniSharp", args = ["--languageserver"] }
 openscad-lsp = { command = "openscad-lsp", args = ["--stdio"] }
 pasls = { command = "pasls", args = [] }
-pbkit = { command = "pb", args = [ "lsp" ] }
-perlnavigator = { command = "perlnavigator", args= ["--stdio"] }
+pbkit = { command = "pb", args = ["lsp"] }
+perlnavigator = { command = "perlnavigator", args = ["--stdio"] }
 pest-language-server = { command = "pest-language-server" }
-prisma-language-server = { command = "prisma-language-server", args = ["--stdio"] }
-purescript-language-server = { command = "purescript-language-server", args = ["--stdio"] }
+prisma-language-server = { command = "prisma-language-server", args = [
+  "--stdio",
+] }
+purescript-language-server = { command = "purescript-language-server", args = [
+  "--stdio",
+] }
 pylsp = { command = "pylsp" }
 pyright = { command = "pyright-langserver", args = ["--stdio"], config = {} }
 pylyzer = { command = "pylyzer", args = ["--server"] }
@@ -76,7 +111,9 @@ qmlls = { command = "qmlls" }
 r = { command = "R", args = ["--no-echo", "-e", "languageserver::run()"] }
 racket = { command = "racket", args = ["-l", "racket-langserver"] }
 regols = { command = "regols" }
-rescript-language-server = { command = "rescript-language-server", args = ["--stdio"] }
+rescript-language-server = { command = "rescript-language-server", args = [
+  "--stdio",
+] }
 robotframework_ls = { command = "robotframework_ls" }
 serve-d = { command = "serve-d" }
 slint-lsp = { command = "slint-lsp", args = [] }
@@ -84,7 +121,16 @@ solargraph = { command = "solargraph", args = ["stdio"] }
 solc = { command = "solc", args = ["--lsp"] }
 sourcekit-lsp = { command = "sourcekit-lsp" }
 svlangserver = { command = "svlangserver", args = [] }
-swipl = { command = "swipl", args = [ "-g", "use_module(library(lsp_server))", "-g", "lsp_server:main", "-t", "halt", "--", "stdio" ] }
+swipl = { command = "swipl", args = [
+  "-g",
+  "use_module(library(lsp_server))",
+  "-g",
+  "lsp_server:main",
+  "-t",
+  "halt",
+  "--",
+  "stdio",
+] }
 tailwindcss-ls = { command = "tailwindcss-language-server", args = ["--stdio"] }
 taplo = { command = "taplo", args = ["lsp", "stdio"] }
 templ = { command = "templ", args = ["lsp"] }
@@ -93,10 +139,18 @@ texlab = { command = "texlab" }
 vala-language-server = { command = "vala-language-server" }
 vhdl_ls = { command = "vhdl_ls", args = [] }
 vlang-language-server = { command = "v-analyzer" }
-vscode-css-language-server = { command = "vscode-css-language-server", args = ["--stdio"], config = { provideFormatter = true, css = { validate = { enable = true } } } }
-vscode-html-language-server = { command = "vscode-html-language-server", args = ["--stdio"], config = { provideFormatter = true } }
-vscode-json-language-server = { command = "vscode-json-language-server", args = ["--stdio"], config = { provideFormatter = true, json = { validate = { enable = true } } } }
-vuels = { command = "vue-language-server", args = ["--stdio"], config = { typescript = { tsdk = "node_modules/typescript/lib/" } } }
+vscode-css-language-server = { command = "vscode-css-language-server", args = [
+  "--stdio",
+], config = { provideFormatter = true, css = { validate = { enable = true } } } }
+vscode-html-language-server = { command = "vscode-html-language-server", args = [
+  "--stdio",
+], config = { provideFormatter = true } }
+vscode-json-language-server = { command = "vscode-json-language-server", args = [
+  "--stdio",
+], config = { provideFormatter = true, json = { validate = { enable = true } } } }
+vuels = { command = "vue-language-server", args = [
+  "--stdio",
+], config = { typescript = { tsdk = "node_modules/typescript/lib/" } } }
 wgsl_analyzer = { command = "wgsl-analyzer" }
 yaml-language-server = { command = "yaml-language-server", args = ["--stdio"] }
 zls = { command = "zls" }
@@ -105,7 +159,9 @@ typst-lsp = { command = "typst-lsp" }
 tinymist = { command = "tinymist" }
 pkgbuild-language-server = { command = "pkgbuild-language-server" }
 helm_ls = { command = "helm_ls", args = ["serve"] }
-ember-language-server = { command = "ember-language-server", args = ["--stdio"] }
+ember-language-server = { command = "ember-language-server", args = [
+  "--stdio",
+] }
 
 #LUA
 [[language]]
@@ -116,7 +172,7 @@ file-types = ["lua"]
 shebangs = ["lua", "luajit"]
 roots = [".luarc.json", ".luacheckrc", ".stylua.toml", "selene.toml", ".git"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "lua-language-server" ]
+language-servers = ["lua-language-server"]
 
 [[grammar]]
 name = "lua"
@@ -144,6 +200,12 @@ inlayHints.closureReturnTypeHints.enable = "with_block"
 inlayHints.discriminantHints.enable = "fieldless"
 inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 inlayHints.typeHints.hideClosureInitialization = false
+procMacro = { ignored = { leptos_macro = [
+  # Optional:
+  # "component",
+  "server",
+] } }
+
 
 [[language]]
 # hi Dani. hi -Dani
@@ -154,7 +216,7 @@ file-types = ["rs"]
 roots = ["Cargo.toml", "Cargo.lock"]
 shebangs = ["rust-script", "cargo"]
 auto-format = false
-language-servers = [ "rust-analyzer" ]
+language-servers = ["rust-analyzer"]
 indent = { tab-width = 4, unit = "    " }
 persistent-diagnostic-sources = ["rustc", "clippy"]
 
@@ -173,26 +235,35 @@ command = "lldb-dap"
 [[language.debugger.templates]]
 name = "binary"
 request = "launch"
-completion = [ { name = "binary", completion = "filename" } ]
+completion = [{ name = "binary", completion = "filename" }]
 args = { program = "{0}" }
 
 [[language.debugger.templates]]
 name = "binary (terminal)"
 request = "launch"
-completion = [ { name = "binary", completion = "filename" } ]
+completion = [{ name = "binary", completion = "filename" }]
 args = { program = "{0}", runInTerminal = true }
 
 [[language.debugger.templates]]
 name = "attach"
 request = "attach"
-completion = [ "pid" ]
+completion = ["pid"]
 args = { pid = "{0}" }
 
 [[language.debugger.templates]]
 name = "gdbserver attach"
 request = "attach"
-completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ]
-args = { attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] }
+completion = [
+  { name = "lldb connect url", default = "connect://localhost:3333" },
+  { name = "file", completion = "filename" },
+  "pid",
+]
+args = { attachCommands = [
+  "platform select remote-gdb-server",
+  "platform connect {0}",
+  "file {1}",
+  "attach {2}",
+] }
 
 [[grammar]]
 name = "rust"
@@ -226,7 +297,17 @@ file-types = [
   "avsc",
   { glob = ".prettierrc" },
 ]
-language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [
+  { name = "vscode-json-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path",
+  "test.json",
+] }
 auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
@@ -240,7 +321,7 @@ scope = "source.json"
 injection-regex = "jsonc"
 file-types = ["jsonc"]
 grammar = "json"
-language-servers = [ "vscode-json-language-server" ]
+language-servers = ["vscode-json-language-server"]
 auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
@@ -262,8 +343,8 @@ source = { git = "https://github.com/Joakker/tree-sitter-json5", rev = "c23f7a9b
 name = "c"
 scope = "source.c"
 injection-regex = "c"
-file-types = ["c", "h"] # TODO: ["h"]
-language-servers = [ "clangd" ]
+file-types = ["c", "h"]                   # TODO: ["h"]
+language-servers = ["clangd"]
 indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
@@ -274,20 +355,29 @@ command = "lldb-dap"
 [[language.debugger.templates]]
 name = "binary"
 request = "launch"
-completion = [ { name = "binary", completion = "filename" } ]
+completion = [{ name = "binary", completion = "filename" }]
 args = { console = "internalConsole", program = "{0}" }
 
 [[language.debugger.templates]]
 name = "attach"
 request = "attach"
-completion = [ "pid" ]
+completion = ["pid"]
 args = { console = "internalConsole", pid = "{0}" }
 
 [[language.debugger.templates]]
 name = "gdbserver attach"
 request = "attach"
-completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ]
-args = { console = "internalConsole", attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] }
+completion = [
+  { name = "lldb connect url", default = "connect://localhost:3333" },
+  { name = "file", completion = "filename" },
+  "pid",
+]
+args = { console = "internalConsole", attachCommands = [
+  "platform select remote-gdb-server",
+  "platform connect {0}",
+  "file {1}",
+  "attach {2}",
+] }
 
 [[grammar]]
 name = "c"
@@ -298,8 +388,32 @@ source = { git = "https://github.com/tree-sitter/tree-sitter-c", rev = "7175a6dd
 name = "cpp"
 scope = "source.cpp"
 injection-regex = "cpp"
-file-types = ["cc", "hh", "c++", "cpp", "hpp", "h", "ipp", "tpp", "cxx", "hxx", "ixx", "txx", "ino", "C", "H", "cu", "cuh", "cppm", "h++", "ii", "inl", { glob = ".hpp.in" }, { glob = ".h.in" }]
-language-servers = [ "clangd" ]
+file-types = [
+  "cc",
+  "hh",
+  "c++",
+  "cpp",
+  "hpp",
+  "h",
+  "ipp",
+  "tpp",
+  "cxx",
+  "hxx",
+  "ixx",
+  "txx",
+  "ino",
+  "C",
+  "H",
+  "cu",
+  "cuh",
+  "cppm",
+  "h++",
+  "ii",
+  "inl",
+  { glob = ".hpp.in" },
+  { glob = ".h.in" },
+]
+language-servers = ["clangd"]
 indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
@@ -310,20 +424,29 @@ command = "lldb-dap"
 [[language.debugger.templates]]
 name = "binary"
 request = "launch"
-completion = [ { name = "binary", completion = "filename" } ]
+completion = [{ name = "binary", completion = "filename" }]
 args = { console = "internalConsole", program = "{0}" }
 
 [[language.debugger.templates]]
 name = "attach"
 request = "attach"
-completion = [ "pid" ]
+completion = ["pid"]
 args = { console = "internalConsole", pid = "{0}" }
 
 [[language.debugger.templates]]
 name = "gdbserver attach"
 request = "attach"
-completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ]
-args = { console = "internalConsole", attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] }
+completion = [
+  { name = "lldb connect url", default = "connect://localhost:3333" },
+  { name = "file", completion = "filename" },
+  "pid",
+]
+args = { console = "internalConsole", attachCommands = [
+  "platform select remote-gdb-server",
+  "platform connect {0}",
+  "file {1}",
+  "attach {2}",
+] }
 
 [[grammar]]
 name = "cpp"
@@ -337,40 +460,60 @@ injection-regex = "c-?sharp"
 file-types = ["cs", "csx", "cake"]
 roots = ["sln", "csproj"]
 indent = { tab-width = 4, unit = "\t" }
-language-servers = [ "omnisharp" ]
+language-servers = ["omnisharp"]
 
 [language.debugger]
 name = "netcoredbg"
 transport = "tcp"
 command = "netcoredbg"
-args = [ "--interpreter=vscode" ]
+args = ["--interpreter=vscode"]
 port-arg = "--server={}"
 
 [[language.debugger.templates]]
 name = "launch"
 request = "launch"
-completion = [ { name = "path to dll", completion = "filename" } ]
+completion = [{ name = "path to dll", completion = "filename" }]
 args = { type = "coreclr", console = "internalConsole", internalConsoleOptions = "openOnSessionStart", program = "{0}" }
 
 [[language.debugger.templates]]
 name = "attach"
 request = "attach"
-completion = [ "pid" ]
+completion = ["pid"]
 args = { processId = "{0}" }
 
 [[grammar]]
 name = "c-sharp"
 source = { git = "https://github.com/tree-sitter/tree-sitter-c-sharp", rev = "5b60f99545fea00a33bbfae5be956f684c4c69e2" }
 
-#JAVASCRIPT
+#JAVASCRIPT (JS)
 [[language]]
 name = "javascript"
 scope = "source.js"
 injection-regex = "(js|javascript)"
 language-id = "javascript"
-file-types = ["js", "mjs", "cjs", "rules", "es6", "pac", { glob = ".node_repl_history" }, { glob = "jakefile" }]
+file-types = [
+  "js",
+  "mjs",
+  "cjs",
+  "rules",
+  "es6",
+  "pac",
+  { glob = ".node_repl_history" },
+  { glob = "jakefile" },
+]
 shebangs = ["node"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path=prd.js", # no idea why a file name is needed
+  "--indent-style=space",
+  "--indent-width=4",
+] }
 indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
@@ -382,7 +525,7 @@ quirks = { absolute-paths = true }
 [[language.debugger.templates]]
 name = "source"
 request = "launch"
-completion = [ { name = "main", completion = "filename", default = "index.js" } ]
+completion = [{ name = "main", completion = "filename", default = "index.js" }]
 args = { program = "{0}" }
 
 [[grammar]]
@@ -396,8 +539,19 @@ scope = "source.jsx"
 injection-regex = "jsx"
 language-id = "javascriptreact"
 file-types = ["jsx"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
 indent = { tab-width = 4, unit = "    " }
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path=test.jsx", # no idea why a file name is needed
+  "--indent-style=space",
+  "--indent-width=4",
+] }
 grammar = "javascript"
 
 #SVELTE
@@ -407,7 +561,7 @@ scope = "source.svelte"
 injection-regex = "svelte"
 file-types = ["svelte"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "svelteserver" ]
+language-servers = ["svelteserver"]
 
 [[grammar]]
 name = "svelte"
@@ -421,7 +575,7 @@ injection-regex = "vue"
 file-types = ["vue"]
 roots = ["package.json"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "vuels" ]
+language-servers = ["vuels"]
 
 [[grammar]]
 name = "vue"
@@ -439,7 +593,7 @@ indent = { tab-width = 4, unit = "    " }
 name = "jsdoc"
 source = { git = "https://github.com/tree-sitter/tree-sitter-jsdoc", rev = "189a6a4829beb9cdbe837260653b4a3dfb0cc3db" }
 
-#TYPESCRIPT
+#TYPESCRIPT (TS)
 [[language]]
 name = "typescript"
 scope = "source.ts"
@@ -447,7 +601,18 @@ injection-regex = "(ts|typescript)"
 language-id = "typescript"
 file-types = ["ts", "mts", "cts"]
 shebangs = ["deno", "bun", "ts-node"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path=prd.ts", # no idea why a file name is needed
+  "--indent-style=space",
+  "--indent-width=4",
+] }
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
@@ -461,7 +626,18 @@ scope = "source.tsx"
 injection-regex = "(tsx)" # |typescript
 language-id = "typescriptreact"
 file-types = ["tsx"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+formatter = { command = "biome", args = [
+  "format",
+  "--stdin-file-path=prd.tsx", # no idea why a file name is needed
+  "--indent-style=space",
+  "--indent-width=4",
+] }
 indent = { tab-width = 4, unit = "    " }
 auto-format = true
 
@@ -475,7 +651,7 @@ name = "css"
 scope = "source.css"
 injection-regex = "css"
 file-types = ["css", "scss"]
-language-servers = [ "vscode-css-language-server" ]
+language-servers = ["vscode-css-language-server"]
 auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
@@ -489,7 +665,7 @@ name = "scss"
 scope = "source.scss"
 injection-regex = "scss"
 file-types = ["scss"]
-language-servers = [ "vscode-css-language-server" ]
+language-servers = ["vscode-css-language-server"]
 auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
@@ -502,8 +678,20 @@ source = { git = "https://github.com/serenadeai/tree-sitter-scss", rev = "c478c6
 name = "html"
 scope = "text.html.basic"
 injection-regex = "html"
-file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml"]
-language-servers = [ "vscode-html-language-server" ]
+file-types = [
+  "html",
+  "htm",
+  "shtml",
+  "xhtml",
+  "xht",
+  "jsp",
+  "asp",
+  "aspx",
+  "jshtm",
+  "volt",
+  "rhtml",
+]
+language-servers = ["vscode-html-language-server"]
 auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
@@ -516,12 +704,32 @@ source = { git = "https://github.com/tree-sitter/tree-sitter-html", rev = "29f53
 name = "python"
 scope = "source.python"
 injection-regex = "py(thon)?"
-file-types = ["py", "pyi", "py3", "pyw", "ptl", "rpy", "cpy", "ipy", "pyt", { glob = ".python_history" }, { glob = ".pythonstartup" }, { glob = ".pythonrc" }, { glob = "SConstruct" }, { glob = "SConscript" }]
+file-types = [
+  "py",
+  "pyi",
+  "py3",
+  "pyw",
+  "ptl",
+  "rpy",
+  "cpy",
+  "ipy",
+  "pyt",
+  { glob = ".python_history" },
+  { glob = ".pythonstartup" },
+  { glob = ".pythonrc" },
+  { glob = "SConstruct" },
+  { glob = "SConscript" },
+]
 shebangs = ["python"]
 roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json"]
 indent = { tab-width = 4, unit = "    " }
 language-servers = ["pyright"]
-formatter = { command = "black", args = ["--line-length", "80", "--quiet", "-"] }
+formatter = { command = "black", args = [
+  "--line-length",
+  "80",
+  "--quiet",
+  "-",
+] }
 
 # [language-server.ruff]
 # command = "ruff-lsp"
@@ -597,7 +805,7 @@ file-types = [
   { glob = ".hushlogin" },
 ]
 shebangs = ["sh", "bash", "dash", "zsh"]
-language-servers = [ "bash-language-server" ]
+language-servers = ["bash-language-server"]
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
@@ -612,7 +820,7 @@ injection-regex = "php"
 file-types = ["php", "inc", "php4", "php5", "phtml", "ctp"]
 shebangs = ["php"]
 roots = ["composer.json", "index.php"]
-language-servers = [ "intelephense" ]
+language-servers = ["intelephense"]
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
@@ -637,7 +845,7 @@ name = "latex"
 scope = "source.tex"
 injection-regex = "tex"
 file-types = ["tex", "sty", "cls", "Rd", "bbx", "cbx"]
-language-servers = [ "texlab" ]
+language-servers = ["texlab"]
 indent = { tab-width = 4, unit = "\t" }
 
 [[grammar]]
@@ -651,7 +859,7 @@ scope = "source.java"
 injection-regex = "java"
 file-types = ["java", "jav", "pde"]
 roots = ["pom.xml", "build.gradle", "build.gradle.kts"]
-language-servers = [ "jdtls" ]
+language-servers = ["jdtls"]
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
@@ -663,7 +871,13 @@ source = { git = "https://github.com/tree-sitter/tree-sitter-java", rev = "09d65
 name = "groovy"
 language-id = "groovy"
 scope = "source.groovy"
-file-types = ["gradle", "groovy", "jenkinsfile", { glob = "Jenkinsfile" },  { glob = "Jenkinsfile.*" }]
+file-types = [
+  "gradle",
+  "groovy",
+  "jenkinsfile",
+  { glob = "Jenkinsfile" },
+  { glob = "Jenkinsfile.*" },
+]
 shebangs = ["groovy"]
 indent = { tab-width = 4, unit = "    " }
 
@@ -677,7 +891,7 @@ name = "yaml"
 scope = "source.yaml"
 file-types = ["yml", "yaml"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "yaml-language-server", "ansible-language-server" ]
+language-servers = ["yaml-language-server", "ansible-language-server"]
 injection-regex = "yml|yaml"
 
 [[grammar]]
@@ -690,7 +904,7 @@ name = "cmake"
 scope = "source.cmake"
 file-types = ["cmake", { glob = "CMakeLists.txt" }]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "cmake-language-server" ]
+language-servers = ["cmake-language-server"]
 injection-regex = "cmake"
 
 [[grammar]]
@@ -701,7 +915,15 @@ source = { git = "https://github.com/uyha/tree-sitter-cmake", rev = "6e51463ef30
 [[language]]
 name = "make"
 scope = "source.make"
-file-types = [{ glob = "Makefile" }, { glob = "makefile" }, "make", "mk", "mak", {glob = "GNUmakefile" }, { glob = "OCamlMakefile" }]
+file-types = [
+  { glob = "Makefile" },
+  { glob = "makefile" },
+  "make",
+  "mk",
+  "mak",
+  { glob = "GNUmakefile" },
+  { glob = "OCamlMakefile" },
+]
 shebangs = ["make", "gmake"]
 injection-regex = "(make|makefile|Makefile|mk)"
 indent = { tab-width = 4, unit = "\t" }
@@ -714,7 +936,7 @@ source = { git = "https://github.com/alemuller/tree-sitter-make", rev = "a4b9187
 [[language]]
 name = "glsl"
 scope = "source.glsl"
-file-types = ["glsl", "vert", "tesc", "tese", "geom", "frag", "comp" ]
+file-types = ["glsl", "vert", "tesc", "tese", "geom", "frag", "comp"]
 indent = { tab-width = 4, unit = "    " }
 injection-regex = "glsl"
 
@@ -741,9 +963,21 @@ source = { git = "https://github.com/szebniok/tree-sitter-wgsl", rev = "272e89ef
 name = "markdown"
 scope = "source.md"
 injection-regex = "md|markdown"
-file-types = ["md", "markdown", "mkd", "mkdn", "mdwn", "mdown", "markdn", "mdtxt", "mdtext", "workbook", { glob = "PULLREQ_EDITMSG" }]
+file-types = [
+  "md",
+  "markdown",
+  "mkd",
+  "mkdn",
+  "mdwn",
+  "mdown",
+  "markdn",
+  "mdtxt",
+  "mdtext",
+  "workbook",
+  { glob = "PULLREQ_EDITMSG" },
+]
 roots = [".marksman.toml"]
-language-servers = [ "marksman", "markdown-oxide" ]
+language-servers = ["marksman", "markdown-oxide"]
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
@@ -771,7 +1005,7 @@ file-types = [
   { glob = "containerfile.*" },
 ]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "docker-langserver" ]
+language-servers = ["docker-langserver"]
 
 [[grammar]]
 name = "dockerfile"
@@ -782,7 +1016,7 @@ source = { git = "https://github.com/camdencheek/tree-sitter-dockerfile", rev = 
 name = "docker-compose"
 scope = "source.yaml.docker-compose"
 roots = ["docker-compose.yaml", "docker-compose.yml"]
-language-servers = [ "docker-compose-langserver", "yaml-language-server" ]
+language-servers = ["docker-compose-langserver", "yaml-language-server"]
 file-types = [{ glob = "docker-compose.yaml" }, { glob = "docker-compose.yml" }]
 indent = { tab-width = 4, unit = "    " }
 grammar = "yaml"
@@ -839,7 +1073,12 @@ source = { git = "https://github.com/tree-sitter/tree-sitter-regex", rev = "e1cf
 [[language]]
 name = "git-config"
 scope = "source.gitconfig"
-file-types = [{ glob = ".gitmodules" }, { glob = ".gitconfig" }, { glob = ".git/config" }, { glob = ".config/git/config" }]
+file-types = [
+  { glob = ".gitmodules" },
+  { glob = ".gitconfig" },
+  { glob = ".git/config" },
+  { glob = ".config/git/config" },
+]
 injection-regex = "git-config"
 indent = { tab-width = 4, unit = "\t" }
 
@@ -863,7 +1102,14 @@ source = { git = "https://github.com/mtoohey31/tree-sitter-gitattributes", rev =
 [[language]]
 name = "git-ignore"
 scope = "source.gitignore"
-file-types = [{ glob = ".gitignore_global" }, { glob = ".ignore" }, { glob = "CODEOWNERS" }, { glob = ".config/helix/ignore" }, { glob = ".helix/ignore" }, { glob = ".*ignore" }]
+file-types = [
+  { glob = ".gitignore_global" },
+  { glob = ".ignore" },
+  { glob = "CODEOWNERS" },
+  { glob = ".config/helix/ignore" },
+  { glob = ".helix/ignore" },
+  { glob = ".*ignore" },
+]
 injection-regex = "git-ignore"
 grammar = "gitignore"
 
@@ -877,7 +1123,7 @@ name = "graphql"
 scope = "source.graphql"
 injection-regex = "graphql"
 file-types = ["gql", "graphql", "graphqls"]
-language-servers = [ "graphql-language-service" ]
+language-servers = ["graphql-language-service"]
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
@@ -891,7 +1137,7 @@ scope = "source.kotlin"
 file-types = ["kt", "kts"]
 roots = ["settings.gradle", "settings.gradle.kts"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "kotlin-language-server" ]
+language-servers = ["kotlin-language-server"]
 
 [[grammar]]
 name = "kotlin"
@@ -905,7 +1151,7 @@ injection-regex = "gleam"
 file-types = ["gleam"]
 roots = ["gleam.toml"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "gleam" ]
+language-servers = ["gleam"]
 auto-format = true
 
 [[grammar]]
@@ -932,7 +1178,7 @@ injection-regex = "nu"
 file-types = ["nu", "nuon"]
 shebangs = ["nu"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "nu-lsp" ]
+language-servers = ["nu-lsp"]
 
 [[grammar]]
 name = "nu"
@@ -945,7 +1191,7 @@ scope = "source.slint"
 injection-regex = "slint"
 file-types = ["slint"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "slint-lsp" ]
+language-servers = ["slint-lsp"]
 
 [[grammar]]
 name = "slint"
@@ -1015,7 +1261,7 @@ file-types = [
   "xoml",
   "musicxml",
   "glif",
-  "ui"
+  "ui",
 ]
 indent = { tab-width = 4, unit = "    " }
 
@@ -1035,7 +1281,12 @@ source = { git = "https://github.com/RenjiSann/tree-sitter-xml", rev = "48a7c2b6
 [[language]]
 name = "env"
 scope = "source.env"
-file-types = [{ glob = ".env" }, { glob = ".env.*" }, { glob = ".envrc" }, { glob = ".envrc.*" }]
+file-types = [
+  { glob = ".env" },
+  { glob = ".env.*" },
+  { glob = ".envrc" },
+  { glob = ".envrc.*" },
+]
 injection-regex = "env"
 indent = { tab-width = 4, unit = "\t" }
 grammar = "bash"
@@ -1074,8 +1325,8 @@ source = { git = "https://github.com/naclsn/tree-sitter-nasm", rev = "a0db15db6f
 name = "powershell"
 scope = "source.powershell"
 injection-regex = "(pwsh|powershell)"
-file-types = [ "ps1", "psm1", "psd1", "pscc", "psrc" ]
-shebangs = [ "pwsh", "powershell" ]
+file-types = ["ps1", "psm1", "psd1", "pscc", "psrc"]
+shebangs = ["pwsh", "powershell"]
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
