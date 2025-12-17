@@ -54,7 +54,7 @@
 "type" = { fg = "fg", modifiers = ["italic"] }
 "type.builtin" = { fg = "fg", modifiers = ["italic", "bold"] }
 "label" = { fg = "dim" }
-"namespace" = { fg = "dim" }
+"namespace" = { fg = "fg" }
 
 # Punctuation (Dimmed to reduce visual noise)
 "punctuation" = { fg = "dim" }
