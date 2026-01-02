@@ -1,10 +1,11 @@
-theme = "gruvbox"
+# theme = "gruvbox"
 # theme = "onedark"
 # theme = "chalkboard"
 # theme = "fleet_dark"
 # theme = "catppuccin_latte"
 # theme = "dark_plus"
 # theme = "torvalds_minimal"
+theme = "amber_heard"
 
 [editor]
 line-number = "relative"
