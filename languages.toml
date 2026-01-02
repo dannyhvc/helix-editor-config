@@ -107,6 +107,7 @@ purescript-language-server = { command = "purescript-language-server", args = [
 pylsp = { command = "pylsp" }
 pyright = { command = "pyright-langserver", args = ["--stdio"], config = {} }
 pylyzer = { command = "pylyzer", args = ["--server"] }
+pyrefly = { command = "pyrefly", args = ["lsp"] }
 qmlls = { command = "qmlls" }
 r = { command = "R", args = ["--no-echo", "-e", "languageserver::run()"] }
 racket = { command = "racket", args = ["-l", "racket-langserver"] }
@@ -723,7 +724,7 @@ file-types = [
 shebangs = ["python"]
 roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json"]
 indent = { tab-width = 4, unit = "    " }
-language-servers = ["pyright"]
+language-servers = ["pyrefly"]
 formatter = { command = "black", args = [
   "--line-length",
   "80",
