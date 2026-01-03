@@ -36,6 +36,8 @@
 "ui.help" = { fg = "fg_offwh", bg = "bg_slate" }
 "ui.window" = { fg = "fg_offwh", bg = "bg_slate" }
 
+"ui.virtual.jump-label" = { fg = "green", modifiers = ["bold"] }
+
 # -----------------
 # SYNTAX HIGHLIGHTING
 # -----------------
@@ -106,112 +108,5 @@ bg_slate = "#121212"
 
 # FG: #E0E0E0 (Off-White - Logic/Structure)
 fg_offwh = "#E0E0E0"
-=======
-# Scientific Triad - Amber Focus
-# Palette:
-# BG: #121212 (Dark Grey - Reduces Halation)
-# FG: #E0E0E0 (Off-White - Logic/Structure)
-# HL: #FFB000 (Amber - Data/Values/Focus)
 
-# -----------------
-# UI & EDITOR
-# -----------------
-"ui.background" = { bg = "bg_slate" }
-"ui.text" = { fg = "fg_offwh" }
-"ui.text.focus" = { fg = "fg_offwh", modifiers = ["bold"] }
-
-# Gutter / Line Numbers
-# We use 'dimmed' to lower the brightness of the line numbers so they don't compete with code
-"ui.linenr" = { fg = "fg_offwh", modifiers = ["dimmed"] }
-"ui.linenr.selected" = { fg = "hl_amber", modifiers = ["bold"] }
-
-# Statusline
-# Inverted colors to create a clear visual border without a 4th color
-"ui.statusline" = { fg = "hl_amber", bg = "bg_slate", modifiers = ["bold"] }
-"ui.statusline.inactive" = { fg = "fg_offwh", bg = "bg_slate", modifiers = ["dimmed"] }
-"ui.statusline.normal" = { fg = "bg_slate", bg = "hl_amber", modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "bg_slate", bg = "fg_offwh", modifiers = ["bold"] }
-"ui.statusline.select" = { fg = "bg_slate", bg = "bg_slate", modifiers = ["bold", "reversed"] }
-
-# Cursor & Selection
-"ui.cursor" = { fg = "bg_slate", bg = "hl_amber" } 
-"ui.cursor.primary" = { fg = "bg_slate", bg = "hl_amber" }
-"ui.selection" = { fg = "bg_slate", bg = "hl_amber" } # High contrast selection
-"ui.selection.primary" = { fg = "bg_slate", bg = "hl_amber" }
-
-# Menus and Popups
-"ui.menu" = { fg = "fg_offwh", bg = "bg_slate" }
-"ui.menu.selected" = { fg = "bg_slate", bg = "hl_amber" }
-"ui.help" = { fg = "fg_offwh", bg = "bg_slate" }
-"ui.window" = { fg = "fg_offwh", bg = "bg_slate" }
-
-# -----------------
-# SYNTAX HIGHLIGHTING
-# -----------------
-
-# LAYER 1: STRUCTURE (Off-White)
-# Grammar, Logic, Operators. The "Skeleton" of the code.
-"keyword" = "fg_offwh"
-"operator" = "fg_offwh"
-"punctuation" = "fg_offwh"
-"variable" = "fg_offwh"
-"variable.parameter" = {fg = "fg_offwh", modifiers=["italic"]}
-"function" = "fg_offwh"
-"function.macro" = "fg_offwh"
-"type" = "fg_offwh"
-"tag" = "fg_offwh"
-"namespace" = "fg_offwh"
-"attribute" = "fg_offwh"
-
-# LAYER 2: DATA (Amber)
-# Strings, Numbers, Constants. The "Meat" you need to read/debug.
-"string" = "hl_amber"
-"constant" = "hl_amber"
-"constant.numeric" = "hl_amber"
-"constant.character" = "hl_amber"
-"constant.character.escape" = { fg = "hl_amber", modifiers = ["bold"] }
-"label" = "hl_amber" # Often used for JSON keys or lifetimes
-"special" = "hl_amber" 
-
-# LAYER 3: META & COMMENTS
-# Comments are Off-White but dimmed to push them to the background layer visually.
-"comment" = { fg = "fg_offwh", modifiers = ["dimmed"] }
-"comment.block" = { fg = "fg_offwh", modifiers = ["dimmed"] }
-"doc_comment" = { fg = "fg_offwh", modifiers = ["italic", "dimmed"] }
-
-# -----------------
-# DIAGNOSTICS & GIT
-# -----------------
-
-# Since we lack Red/Green, we use Amber for "Attention" and Dimmed for "Ignorable"
-"diagnostic.error" = { fg = "hl_amber", modifiers = ["underlined", "bold"] }
-"diagnostic.warning" = { fg = "hl_amber", modifiers = ["underlined"] }
-"diagnostic.info" = { fg = "fg_offwh", modifiers = ["italic"] }
-"diagnostic.hint" = { fg = "fg_offwh", modifiers = ["dimmed"] }
-
-# Git Gutter
-"diff.plus" = "hl_amber"
-"diff.delta" = "hl_amber"
-"diff.minus" = { fg = "fg_offwh", modifiers = ["cross_out", "dimmed"] }
-
-# -----------------
-# MARKUP (Markdown)
-# -----------------
-"markup.heading" = { fg = "hl_amber", modifiers = ["bold"] }
-"markup.bold" = { modifiers = ["bold"] }
-"markup.italic" = { modifiers = ["italic"] }
-"markup.link.url" = { fg = "hl_amber", modifiers = ["underlined"] }
-"markup.link.text" = "fg_offwh"
-"markup.list" = "hl_amber"
-"markup.quote" = { fg = "fg_offwh", modifiers = ["italic", "dimmed"] }
-
-
-[palette]
-# HL: #FFB000 (Amber - Data/Values/Focus)
-hl_amber = "#FFB000"
-
-# BG: #121212 (Dark Grey - Reduces Halation)
-bg_slate = "#121212"
-
-# FG: #E0E0E0 (Off-White - Logic/Structure)
-fg_offwh = "#E0E0E0"
+vjump_green = "#007700"
