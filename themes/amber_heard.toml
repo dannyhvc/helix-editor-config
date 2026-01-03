@@ -46,7 +46,7 @@
 "operator" = "fg_offwh"
 "punctuation" = "fg_offwh"
 "variable" = "fg_offwh"
-"variable.parameter" = "fg_offwh"
+"variable.parameter" = {fg = "fg_offwh", modifiers=["italic"]}
 "function" = "fg_offwh"
 "function.macro" = "fg_offwh"
 "type" = "fg_offwh"
