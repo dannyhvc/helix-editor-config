@@ -36,6 +36,8 @@
 "ui.help" = { fg = "fg_offwh", bg = "bg_slate" }
 "ui.window" = { fg = "fg_offwh", bg = "bg_slate" }
 
+"ui.virtual.jump-label" = { fg = "green", modifiers = ["bold"] }
+
 # -----------------
 # SYNTAX HIGHLIGHTING
 # -----------------
@@ -106,3 +108,5 @@ bg_slate = "#121212"
 
 # FG: #E0E0E0 (Off-White - Logic/Structure)
 fg_offwh = "#E0E0E0"
+
+vjump_green = "#007700"
